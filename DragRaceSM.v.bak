@@ -1,0 +1,24 @@
+module DragRaceSM (Accelerate, Clutch, GearIn, Limit, Rate, EG, NewGame, Speed, Gear, Clock);
+	input Accelerate, Clutch, GearIn, Limit, Rate, NewGame, Clock;
+	input [9:0]EG;
+	output reg Gear, Speed;
+	
+	parameter Idle = 4'b0000, CountDown = 4'b0001, InGear = 4'b0010, Neutral = 4'b0011, 
+								Crash = 4'b0100, Win = 4'b0101, SaveBest = 4'b0110, Best = 4'b0111;
+
+	reg [2:0] State, NextState;
+	
+	always @(posedge Accelerate or posedge NewGame) begin
+		if (NG)
+			State <= Idle;
+		else 
+			State <= NextState;
+			
+		end
+	
+	always @(*) begin
+		
+
+
+
+
