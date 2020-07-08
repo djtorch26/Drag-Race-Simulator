@@ -1,4 +1,4 @@
-module chris_final (BUTTON, SW, CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX2_DP, LEDG);
+module DragRaceSimulation (BUTTON, SW, CLOCK_50, HEX0, HEX1, HEX2, HEX3, HEX2_DP, LEDG);
 	input [2:0] BUTTON;
 	input [9:0] SW;
 	input CLOCK_50;
